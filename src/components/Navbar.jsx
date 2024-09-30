@@ -38,7 +38,7 @@ const Navbar = () => {
                 </div>
             </div>
             {mobileDrawerOpen && (
-                <div className="fixed my-2 right-0 z-100 bg-neutral w-full p-12 flex flex-col justify-center items-center lg:hidden border-y-2">
+                <div className="fixed my-2 right-0 z-100 bg-neutral w-full p-12 flex flex-col justify-center items-center lg:hidden border-y-2 backdrop-blur-lg">
                     <ul >
                         {navItems.map((item, index) => (
                             <li key={index} className="py-2 relative text-center">
