@@ -15,7 +15,7 @@ const HeroSection = () => {
         <span className="heroTitle">{" "}The Skincare You Deserve</span>
       </h1>
       <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl tracking-wide">
-      Your skin is a reflection of your journey—nurture it with the balance and care it deserves. Every routine is a ritual, a moment of self-care, bringing you closer to the confidence that radiates from within.
+      Your skin is a reflection of your journey—nurture it with the balance and care it deserves. Every routine is a ritual, a moment of selfcare, bringing you closer to the confidence that radiates from within.
       </p>
       <div className="flex justify-center my-10">
         <a href="#" className="contactColor py-3 px-4 mx-3 border border-white drop-shadow-xl">
