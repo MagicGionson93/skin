@@ -1,16 +1,31 @@
 import logo from "../assets/logo.png";
 import {navItems} from "../constants";
 import {Menu, X} from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useRef } from "react";
 
 const Navbar = () => {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+    const closeMenu = useRef();
+
     const toggleNavbar = () => {
         setMobileDrawerOpen(!mobileDrawerOpen);
-    };
+    }
+
+    useEffect(() => 
+    {
+        let handler = (e) => {
+            if(!closeMenu?.current?.contains(e.target)){
+                setMobileDrawerOpen(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handler);
+
+    }, [])
 
   return (
-    <nav className={"sticky top-0 z-50 py-3 openBackground " + (mobileDrawerOpen ? 'none' : 'border border-b-2')}>
+    <nav className={"sticky top-0 z-50 py-3 openBackground " + (mobileDrawerOpen ? 'none' : 'border border-b-2')} >
         <div className="container px-4 mx-auto relative text-sm">
             <div className="flex justify-between items-center">
                 <div className="flex items-center flex-shrink-0">
@@ -32,13 +47,13 @@ const Navbar = () => {
                     </a>
                 </div>
                 <div className="lg:hidden md:flex flex-col justify-end">
-                    <button onClick={toggleNavbar}>
+                    <button onClick={toggleNavbar} >
                         {mobileDrawerOpen ? <X /> : <Menu /> }
                     </button>
                 </div>
             </div>
             {mobileDrawerOpen && (
-                <div className="fixed my-2 right-0 z-20 w-full p-12 flex flex-col justify-center items-center lg:hidden openBackground">
+                <div ref={closeMenu}  className="fixed my-2 right-0 z-20 w-full p-12 flex flex-col justify-center items-center lg:hidden openBackground">
                     <ul >
                         {navItems.map((item, index) => (
                             <li key={index} className="py-2 relative text-center">
