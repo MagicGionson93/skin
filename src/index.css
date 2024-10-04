@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 @font-face {
   font-family: myFont;
@@ -14,7 +15,8 @@
 
 :root{
   
-  font-family: myFont, sans-serif;
+  /* font-family: myFont, sans-serif; */
+  font-family: "Josefin Sans", "sans-serif";
   font-size: 1.1rem;
   letter-spacing: 2px;
   
@@ -29,6 +31,17 @@
 }
 
 /* NAVBAR */
+
+.openBackground{
+  background-color: rgb(167, 181, 157);
+  opacity: .7;
+  transition: opacity 0.2s ease-in;
+}
+
+.openBackground:hover{
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
+}
 
 .underlineText::after{
   content: '';
@@ -55,6 +68,14 @@
 .contactColor:hover{
   background-color: #728167;
   transform: translateY(-2px);
+}
+
+.blurNavbar{
+  backdrop-filter: blur(20px);
+}
+
+.blurNavbar:focus-within{
+  backdrop-filter: none;
 }
 
 /* HERO SECTION */

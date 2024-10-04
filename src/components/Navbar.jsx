@@ -10,8 +10,8 @@ const Navbar = () => {
     };
 
   return (
-    <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg-border-b border-neutral-700/80 backdrop-blur-lg">
-        <div className="container px-4 mx-auto relative etxt-sm">
+    <nav className={"sticky top-0 z-50 py-3 openBackground" + (mobileDrawerOpen ? 'none' : 'border border-b-2')}>
+        <div className="container px-4 mx-auto relative text-sm">
             <div className="flex justify-between items-center">
                 <div className="flex items-center flex-shrink-0">
                     <img className="h-10 w-10 mr-2" src={logo} alt="logo" />
@@ -26,7 +26,7 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
-                <div className="hidden lg:flex justify-center space-x-12 items-center contactColor border">
+                <div className="hidden lg:flex justify-center space-x-12 items-center contactColor border ">
                     <a href="#" className="py-2 px-3  ">
                         Contact
                     </a>
@@ -38,7 +38,7 @@ const Navbar = () => {
                 </div>
             </div>
             {mobileDrawerOpen && (
-                <div className="fixed my-2 right-0 z-100 bg-neutral w-full p-12 flex flex-col justify-center items-center lg:hidden border-y-2 backdrop-blur-lg">
+                <div className="fixed my-2 right-0 z-20 w-full p-12 flex flex-col justify-center items-center lg:hidden openBackground">
                     <ul >
                         {navItems.map((item, index) => (
                             <li key={index} className="py-2 relative text-center">
