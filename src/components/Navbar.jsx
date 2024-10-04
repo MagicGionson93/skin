@@ -54,12 +54,12 @@ const Navbar = () => {
                 {/* Mobile Menu */}
                 <div
                     ref={closeMenu}
-                    className={`fixed top-0 right-0 p-8 flex flex-col justify-center items-center lg:hidden mainNav navColor z-20 
+                    className={`navOpenColor fixed top-0 right-0 p-8 flex flex-col justify-center items-center lg:hidden mainNav navColor z-20 
                     transform ${mobileDrawerOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'} 
                     transition-all duration-300 ease-in-out`}
                     style={{ height: "100vh", width: "50vw" }}  // Altezza a 100vh e larghezza a 80vw
                 >
-                    <ul className="w-full text-center space-y-4">
+                    <ul className="w-full text-center space-y-4  text-lg">
                         {navItems.map((item, index) => (
                             <li key={index} className="relative">
                                 <a className="underlineText py-1" href={item.href}>{item.label}</a>
