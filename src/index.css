@@ -32,7 +32,25 @@
 
 /* NAVBAR */
 
+
+@keyframes fadeInDown{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    
+    opacity: 1;
+  }
+}
+
 .openBackground{
+  background-color: rgb(167, 181, 157);
+  animation-name: fadeInDown;
+  animation-duration: 1.5s;
+  
+}
+
+/* .openBackground{
   background-color: rgb(167, 181, 157);
   opacity: .7;
   transition: opacity 0.2s ease-in;
@@ -41,7 +59,7 @@
 .openBackground:hover{
   opacity: 1;
   transition: opacity 0.2s ease-out;
-}
+} */
 
 .underlineText::after{
   content: '';
