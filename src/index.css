@@ -43,13 +43,14 @@
   bottom: 0;
   left: 0;
   background-color: #728167;
-  transform-origin: bottom right;
+  transform-origin: center;
   transition: transform 0.5s ease-out;
 }
 
 .underlineText:hover::after{
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  transform: scaleX(.8);
+  transform-origin: center;
+
 }
 
 .contactColor{

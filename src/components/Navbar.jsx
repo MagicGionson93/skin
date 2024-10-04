@@ -54,10 +54,10 @@ const Navbar = () => {
                 {/* Mobile Menu */}
                 <div
                     ref={closeMenu}
-                    className={`fixed -top-5 right-1/2 p-8 flex flex-col justify-center items-center lg:hidden mainNav navColor z-20 
-                    transform ${mobileDrawerOpen ? 'translate-x-1/2 translate-y-1/2 opacity-100' : 'translate-x-full opacity-0'} 
+                    className={`fixed top-1/2 right-1/2 p-8 flex flex-col justify-center items-center lg:hidden mainNav navColor z-20 
+                    transform ${mobileDrawerOpen ? 'translate-x-1/2 -translate-y-1/2 opacity-100' : 'translate-x-1/2 -translate-y-1/2 opacity-0'} 
                     transition-all duration-300 ease-in-out`}
-                    style={{ height: "60vh", width: "80vw" }}  // Altezza e larghezza ridotte
+                    style={{ height: "60vh", width: "50vw" }}  // Altezza e larghezza ridotte
                 >
                     <ul className="w-full text-center space-y-4">
                         {navItems.map((item, index) => (
