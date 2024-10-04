@@ -34,23 +34,29 @@
   background-color: rgb(167, 181, 157);
 }
 
-.underlineText::after{
+.navTranslate{
+  transform: translate(120%, 8%); 
+}
+
+.underlineText {
+  position: relative; /* Assicurati che l'elemento padre abbia un posizionamento relativo */
+}
+
+.underlineText::after {
   content: '';
   position: absolute;
-  width: 100%;
-  transform: scaleX(0);
+  width: 100%; /* Imposta la larghezza desiderata, ad esempio 80% */
   height: 2px;
-  bottom: 0;
-  left: 0;
+  bottom: 0; 
+  left: 1%; /* Posiziona l'underlined al centro dell'elemento */
   background-color: #728167;
   transform-origin: center;
+  transform: scaleX(0); /* Inizialmente invisibile */
   transition: transform 0.5s ease-out;
 }
 
-.underlineText:hover::after{
-  transform: scaleX(.8);
-  transform-origin: center;
-
+.underlineText:hover::after {
+  transform: scaleX(1); /* Rendi l'underlined completamente visibile al passaggio del mouse */
 }
 
 .contactColor{
