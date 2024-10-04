@@ -17,9 +17,7 @@
   
   /* font-family: myFont, sans-serif; */
   font-family: "Josefin Sans", "sans-serif";
-  font-size: 1.1rem;
-  letter-spacing: 2px;
-  
+  font-size: 1.1rem;  
   
   /* font-family: "Lora", sans-serif; */
   /* font-family: "Playwrite Deutschland Grundschrift", sans-serif; */
@@ -37,8 +35,7 @@
   0%{
     opacity: 0;
   }
-  100%{
-    
+  100%{    
     opacity: 1;
   }
 }
@@ -46,8 +43,22 @@
 .openBackground{
   background-color: rgb(167, 181, 157);
   animation-name: fadeInDown;
-  animation-duration: 1.5s;
-  
+  animation-duration: 1.5s;  
+}
+
+@keyframes fadeOut{
+  100%{
+    opacity: 1;
+  }
+  0%{
+    opacity: 0;
+  }
+}
+
+.closeBackground{
+  background-color: rgb(167, 181, 157);
+  animation-name: fadeOut;
+  animation-duration: 1.5s;  
 }
 
 /* .openBackground{
