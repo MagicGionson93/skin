@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection'
 import Feature from './components/Feature'
 import Workflow  from './components/Workflow'
 import Pricing from './components/Pricing'
+import ContactForm from './components/ContactForm'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Feature />
         <Workflow />
         <Pricing />
+        <ContactForm />
       </div>
     </>
   )
