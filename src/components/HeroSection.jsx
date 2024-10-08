@@ -5,8 +5,6 @@ import video4 from "../assets/video4.mp4"
 import video5 from "../assets/video5.mp4"
 import video6 from "../assets/video6.mp4"
 
-
-
 const HeroSection = () => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-20">

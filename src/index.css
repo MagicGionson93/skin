@@ -95,3 +95,14 @@
 .bgIcons {
   transition: background-color 0.5s ease, color 0.5s ease;
 }
+
+/* WORKFLOW */
+
+.formDivWorkflow:hover .bgIconsWorflow{
+  color: #728167; /* Cambia il background solo dell'icona */
+  transform: translateY(-2px);
+}
+
+.bgIconsWorflow {
+  transition: color 0.5s ease, color 0.5s ease;
+}
