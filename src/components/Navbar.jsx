@@ -27,7 +27,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`sticky top-0 py-3 navColor z-50 ${mobileDrawerOpen ? '' : 'border border-b-2'}`}>
+        <nav className={`sticky top-0 py-3 navColor z-50 ${mobileDrawerOpen ? '' : 'border-b-2'}`}>
             <div className="container px-4 mx-auto relative text-sm">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center flex-shrink-0">
