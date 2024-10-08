@@ -12,7 +12,7 @@ const ContactForm = () => {
   </h2>
   <h3 className="text-center">We'd like to talk more about what you need</h3>
 
-  <div className="flex flex-wrap justify-around mt-10 text-black p-2 mb-20">
+  <div className="flex flex-wrap justify-around mt-10 text-neutral-500 p-2 mb-20">
   <div className="p-3 text-center mb-4 border border-white w-48 h-40"> {/* Dimensioni fisse */}
     <a target="_blank" href="https://www.google.com/maps/place/Via+Antonio+Cantore,+48,+25128+Brescia+BS/@45.5549439,10.2175521,16z/data=!3m1!4b1!4m6!3m5!1s0x4781764e9bce4c7d:0x9941cb2e97979757!8m2!3d45.5549402!4d10.220127!16s%2Fg%2F11c24b2m2y?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D">
       <img src={address} alt="Address" className="mx-auto mb-2 w-8 h-8"/>

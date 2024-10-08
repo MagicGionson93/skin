@@ -11,9 +11,9 @@ const Pricing = () => {
                     <div className="p-10 border">
                         <p className="text-4xl mb-8">
                             {option.title}
-                            {option.title === "Pro" && (
+                            {/* {option.title === "Pro" && (
                                 <span className="bg-gradient-to-r from-orange-500 to-red-500 text-transparent bg-clip-text text-xl mb-4 ml-2">(Most Popular)</span>
-                            )}
+                            )} */}
                         </p>
                         <p className="mb-8">
                             <span className="text-5xl mt-6 mr-2">{option.price}</span>
