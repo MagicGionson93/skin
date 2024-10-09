@@ -6,7 +6,7 @@ import contact from "../assets/contact.svg"
 
 const ContactForm = () => {
     return (
-<div className="mt-20">
+<div className="mt-20" id="Contact">
   <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide ">
     Got a Question?
   </h2>
