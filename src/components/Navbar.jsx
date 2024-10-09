@@ -3,6 +3,7 @@ import {navItems} from "../constants";
 import {Menu, X} from "lucide-react";
 import { useEffect, useState } from "react";
 import { useRef } from "react";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);

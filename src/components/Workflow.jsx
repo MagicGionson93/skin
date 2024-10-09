@@ -4,7 +4,7 @@ import { checklistItems } from "../constants"
 
 const Workflow = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-10">
         <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide">
             Accelerate your 
             <span className="heroTitle">{" "}coding workflow</span>
@@ -30,6 +30,7 @@ const Workflow = () => {
                 ))}
             </div>
         </div>
+        <div id="Price"></div>
     </div>
   )
 }
