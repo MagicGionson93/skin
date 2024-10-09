@@ -68,7 +68,7 @@ const Navbar = () => {
                         ))}
                     </ul>
                     <div className="flex space-x-6 my-3 contactColor border">
-                        <a href="#" className="py-2 px-3">Contact</a>
+                        <a href="#Contact" className="py-2 px-3">Contact</a>
                     </div>
                 </div>
             </div>
