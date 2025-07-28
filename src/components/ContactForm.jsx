@@ -24,7 +24,7 @@ const ContactForm = () => {
       <a target="_blank" href="https://www.google.com/maps/place/Via+Antonio+Cantore,+48,+25128+Brescia+BS/@45.5549439,10.2175521,16z/data=!3m1!4b1!4m6!3m5!1s0x4781764e9bce4c7d:0x9941cb2e97979757!8m2!3d45.5549402!4d10.220127!16s%2Fg%2F11c24b2m2y?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D">
         <img src={address} alt="Address" className="mx-auto mb-2 w-8 h-8"/>
         <h1 className="font-bold">Address</h1>
-        <p className="break-words">Via Antonio Cantore 48, Brescia</p> {/* Sostituisci con l'indirizzo reale */}
+        <p className="break-words">Address</p> {/* Sostituisci con l'indirizzo reale */}
       </a>
     </div>
     
@@ -32,7 +32,7 @@ const ContactForm = () => {
       <a href="mailto:gpasini@live.it">
         <img src={email} alt="Email" className="mx-auto mb-2 w-8 h-8"/>
         <h1 className="font-bold">Email</h1>
-        <p className="break-words">gpasini@live.it</p> 
+        <p className="break-words">email@email.it</p> 
       </a>
     </div>
 
@@ -40,7 +40,7 @@ const ContactForm = () => {
       <a href="tel:+393663032012">
         <img src={phone} alt="Phone" className="mx-auto mb-2 w-8 h-8"/>
         <h1 className="font-bold">Phone</h1>
-        <p>+393663032012</p> {/* Sostituisci con il numero di telefono reale */}
+        <p>+0000000000</p> {/* Sostituisci con il numero di telefono reale */}
       </a>
     </div>    
   </div>
