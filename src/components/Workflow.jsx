@@ -1,5 +1,5 @@
 import {CheckCircle2} from "lucide-react"
-import video5 from "../assets/video5.mp4"
+import video3 from "../assets/video3.mp4"
 import { checklistItems } from "../constants"
 
 const Workflow = () => {
@@ -12,7 +12,7 @@ const Workflow = () => {
         <div className="flex flex-wrap">
             <div className="flex p-2 w-full lg:w-1/2 justify-center">
                 <video autoPlay loop muted className="w-2/3 border border-white mx-2 my-6">
-                    <source src={video5} type="video/mp4"/>
+                    <source src={video3} type="video/mp4"/>
                     Your browser does not support the video tag.
                 </video>
             </div>

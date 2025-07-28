@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='flex flex-col lg:flex-row justify-between items-center'>
             <div className='flex items-center flex-shrink-0 mb-4 lg:mb-0'>
                 <img className="h-10 w-10 mr-2" src={logo} alt="logo" />
-                <span className='text-xl tracking-tight'>Evaryskin</span>
+                <span className='text-xl tracking-tight'>Skin</span>
             </div>
             <ul className="flex flex-col lg:flex-row lg:ml-14 lg:space-x-12 space-y-4 lg:space-y-0 mb-4 lg:mb-0">
                 {navItems.map((item, index) => (

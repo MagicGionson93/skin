@@ -17,7 +17,7 @@ const ContactForm = () => {
     <div className="p-3 text-center flex flex-col justify-center mb-4 borderBox w-48 h-40"> {/* Dimensioni fisse */}
       <img src={contact} alt="Contact" className="mx-auto mb-2 w-8 h-8"/>
       <h1 className="font-bold">Contact</h1>
-      <p>Eva Rista</p> {/* Sostituisci con il link o testo reale */}
+      <p>Contact name</p> {/* Sostituisci con il link o testo reale */}
     </div>
 
     <div className="p-3 text-center flex flex-col justify-center mb-4 borderBox w-48 h-40 "> {/* Dimensioni fisse */}
